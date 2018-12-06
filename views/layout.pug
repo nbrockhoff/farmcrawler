@@ -53,5 +53,5 @@ html
       block content
 
     block scripts
-      script(src=`https://maps.googleapis.com/maps/api/js?key=${process.env.MAP_KEY}&libraries=places`)
+     script(src=`https://maps.googleapis.com/maps/api/js?key=${process.env.MAP_KEY}&libraries=places&signature=${process.env.SIGNATURE}`)
       script(src="/dist/App.bundle.js")
